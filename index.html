@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-header">
+    <div class="nav-main container">
+      <a class="brand" href="#">
+        <span class="brand-logo">amazon</span>
+        <span class="brand-domain">.in</span>
+      </a>
+
+      <button class="deliver-to" type="button">
+        <span class="deliver-small">Deliver to</span>
+        <span class="deliver-strong">Vijay Kumar</span>
+      </button>
+
+      <form class="search-bar" id="searchForm">
+        <select class="search-category" aria-label="Category">
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Fashion</option>
+          <option>Home</option>
+          <option>Books</option>
+        </select>
+        <input id="searchInput" type="text" placeholder="Search Amazon clone products">
+        <button class="search-button" type="submit">Search</button>
+      </form>
+
+      <nav class="nav-actions">
+        <a href="#" class="nav-link">
+          <span class="nav-small">Hello, sign in</span>
+          <span class="nav-strong">Account & Lists</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="nav-small">Returns</span>
+          <span class="nav-strong">& Orders</span>
+        </a>
+        <button class="cart-button" type="button">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="nav-sub">
+      <div class="container nav-sub-inner">
+        <a href="#">this</a>
+        <a href="#">All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Mega sale is live</p>
+          <h1>Everything you want, now in one Amazon-style store</h1>
+          <p class="hero-text">Shop electronics, fashion, home essentials, and daily deals with a clean clone layout inspired by Amazon.</p>
+          <div class="hero-actions">
+            <a href="#products" class="primary-button">Shop now</a>
+            <a href="#categories" class="secondary-button">Explore categories</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Deal of the day</h2>
+          <p>Wireless Headphones</p>
+          <strong>₹2,499</strong>
+          <span>Free delivery tomorrow</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-strip container">
+      <div class="info-box">
+        <strong>Fast Delivery</strong>
+        <span>Get your order in as little as 24 hours</span>
+      </div>
+      <div class="info-box">
+        <strong>Secure Payment</strong>
+        <span>Trusted checkout with multiple payment methods</span>
+      </div>
+      <div class="info-box">
+        <strong>Easy Returns</strong>
+        <span>Simple return policy for peace of mind</span>
+      </div>
+    </section>
+
+    <section class="categories container" id="categories">
+      <div class="section-heading">
+        <h2>Shop by category</h2>
+        <a href="#">See all</a>
+      </div>
+      <div class="category-grid">
+        <article class="category-card accent-blue">
+          <h3>Electronics</h3>
+          <p>Phones, laptops, wearables, and accessories</p>
+        </article>
+        <article class="category-card accent-orange">
+          <h3>Fashion</h3>
+          <p>Trending outfits, shoes, watches, and bags</p>
+        </article>
+        <article class="category-card accent-green">
+          <h3>Home & Kitchen</h3>
+          <p>Furniture, décor, and daily essentials</p>
+        </article>
+        <article class="category-card accent-purple">
+          <h3>Books & Learning</h3>
+          <p>Bestsellers, courses, and study materials</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="products container" id="products">
+      <div class="section-heading">
+        <h2>Featured products</h2>
+        <a href="#">See more</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <span class="product-badge">Best Seller</span>
+          <img src="/box9_image.jpg" alt="Noise Cancelling Headphones" class="product-image">
+          <h3>Noise Cancelling Headphones</h3>
+          <p>Premium sound with deep bass and long battery life.</p>
+          <div class="product-meta">
+            <strong>₹2,499</strong>
+            <span>4.7 ★</span>
+          </div>
+          <button class="add-cart" type="button">Add to cart</button>
+        </article>
+
+        <article class="product-card">
+          <span class="product-badge">New Launch</span>
+          <img src="/box8.png" alt="Smart Watch Pro" class="product-image">
+          <h3>Smart Watch Pro</h3>
+          <p>Track fitness, calls, and notifications in style.</p>
+          <div class="product-meta">
+            <strong>₹3,999</strong>
+            <span>4.6 ★</span>
+          </div>
+          <button class="add-cart" type="button">Add to cart</button>
+        </article>
+
+        <article class="product-card">
+          <span class="product-badge">Top Deal</span>
+          <img src="/box7.jpeg" class="product-image">
+          <h3>Minimal Desk Lamp</h3>
+          <p>Bright adjustable lighting for work and study spaces.</p>
+          <div class="product-meta">
+            <strong>₹1,299</strong>
+            <span>4.5 ★</span>
+          </div>
+          <button class="add-cart" type="button">Add to cart</button>
+        </article>
+
+        <article class="product-card">
+          <span class="product-badge">Limited Time</span>
+          <img src="/box6.jpg" alt="Classic Backpack" class="product-image">
+          <h3>Classic Backpack</h3>
+          <p>Spacious, lightweight, and built for everyday travel.</p>
+          <div class="product-meta">
+            <strong>₹1,799</strong>
+            <span>4.8 ★</span>
+          </div>
+          <button class="add-cart" type="button">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="deals container">
+      <div class="section-heading">
+        <h2>Today’s deals</h2>
+        <a href="#">View all deals</a>
+      </div>
+      <div class="deal-banner">
+        <div>
+          <p class="deal-tag">Up to 60% off</p>
+          <h3>Upgrade your home office today</h3>
+          <p>Grab top accessories and work essentials at special prices.</p>
+        </div>
+        <a href="#products" class="primary-button">Grab deals</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Get to Know Us</h3>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+      </div>
+      <div>
+        <h3>Make Money with Us</h3>
+        <a href="#">Sell products</a>
+        <a href="#">Affiliate program</a>
+        <a href="#">Advertise</a>
+      </div>
+      <div>
+        <h3>Let Us Help You</h3>
+        <a href="#">Your account</a>
+        <a href="#">Your orders</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+    <p class="footer-bottom">Made as a clean Amazon clone practice project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
